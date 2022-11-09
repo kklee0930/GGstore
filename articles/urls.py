@@ -1,6 +1,10 @@
 from django.urls import path
 from . import views
 
+
 app_name = "articles"
 
-urlpatterns = []
+urlpatterns = [
+    path("", views.index, name="index"),
+    # path('', views.AllListView.as_view(), name='all_list'),
+]
